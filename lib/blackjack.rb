@@ -62,7 +62,7 @@ def runner
       prompt_user
     end
 
-    if card_total > 21
+    if display_card_total(card_sum) > 21
       end_game(card_sum)
     end
 end
