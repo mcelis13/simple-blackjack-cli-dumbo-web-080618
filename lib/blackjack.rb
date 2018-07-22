@@ -55,15 +55,9 @@ def runner
   welcome
   card_sum = initial_round
   hit?(card_sum)
-    if storeUserInput === 'h'
-        deal_card
-    elsif  storeUserInput === 's'
-      prompt_user
-    end
-
-    if display_card_total(card_sum) > 21
-      end_game(card_sum)
-    end
+  if display_card_total(card_sum) > 21
+    end_game(card_sum)
+  end
 end
 
 puts runner
