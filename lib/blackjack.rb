@@ -56,8 +56,7 @@ def runner
   card_sum = initial_round
   prompt_user
   storeUserInput = get_user_input
-  puts storeUserInput
-    while storeUserInput == 'h'
+    if storeUserInput == 'h'
       hit?(card_sum)
       display_card_total(card_sum)
       break if display_card_total(card_sum) > 21
