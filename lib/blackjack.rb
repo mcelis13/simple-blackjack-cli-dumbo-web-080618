@@ -56,6 +56,7 @@ def runner
   card_sum = initial_round
   prompt_user
   storeUserInput = get_user_input
+  console.log(storeUserInput)
     while storeUserInput == 'h'
       hit?(card_sum)
       display_card_total(card_sum)
