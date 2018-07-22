@@ -53,7 +53,6 @@ end
 def runner
   welcome
   cardSum = initial_round
-  display_card_total(cardSum)
   prompt_user
   loop do
     hit?
