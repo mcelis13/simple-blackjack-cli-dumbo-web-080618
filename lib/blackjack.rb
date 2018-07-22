@@ -57,10 +57,9 @@ def runner
   prompt_user
   storeUserInput = get_user_input
     if storeUserInput === 'h'
-      loop do
-        card_sum = hit?(card_sum)
-        display_card_total(card_sum)
-      end
+        deal_card
+    elsif  storeUserInput === 's'
+      prompt_user
     end
   #end_game(card_sum)
 end
