@@ -53,7 +53,8 @@ end
 def runner
   welcome
   card_sum = initial_round
-  storeUserInput = prompt_user
+  prompt_user
+  storeUserInput = get_user_input
     while storeUserInput == 'h'
       hit?(card_sum)
       display_card_total(card_sum)
