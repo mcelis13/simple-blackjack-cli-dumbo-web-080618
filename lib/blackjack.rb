@@ -52,13 +52,13 @@ end
 
 def runner
   welcome
-  cardSum = initial_round
-  display_card_total(cardSum)
+  card_sum = initial_round
+  display_card_total(card_sum)
   prompt_user
   loop do
-    hit?(cardSum)
-    display_card_total
-    break if display_card_total > 21
+    hit?(card_sum)
+    display_card_total(card_sum)
+    break if display_card_total(card_sum) > 21
   end
   end_game
 end
