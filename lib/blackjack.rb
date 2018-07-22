@@ -56,7 +56,7 @@ def runner
   card_sum = initial_round
   prompt_user
   storeUserInput = get_user_input
-    if storeUserInput == 'h'
+    if storeUserInput === 'h'
       console.log(card_total)
       loop do
         hit?(card_sum)
