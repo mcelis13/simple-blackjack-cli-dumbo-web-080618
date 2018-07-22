@@ -62,3 +62,4 @@ def runner
   end
   end_game(card_sum)
 end
+console.log(runner)
