@@ -54,8 +54,7 @@ end
 def runner
   welcome
   card_sum = initial_round
-  prompt_user
-  storeUserInput = get_user_input
+  hit?(card_sum)
     if storeUserInput === 'h'
         deal_card
     elsif  storeUserInput === 's'
