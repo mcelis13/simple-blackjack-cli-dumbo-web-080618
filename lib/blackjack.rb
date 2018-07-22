@@ -61,7 +61,10 @@ def runner
     elsif  storeUserInput === 's'
       prompt_user
     end
-  #end_game(card_sum)
+
+    if card_total > 21
+      end_game(card_sum)
+    end
 end
 
 puts runner
