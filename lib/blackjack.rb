@@ -61,10 +61,9 @@ def runner
       loop do
         hit?(card_sum)
         display_card_total(card_sum)
-        break if display_card_total(card_sum) > 21
       end
     end
-  #end_game(card_sum)
+  end_game(card_sum)
 end
 
 puts runner
