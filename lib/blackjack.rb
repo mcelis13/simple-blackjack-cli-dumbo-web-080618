@@ -53,12 +53,12 @@ end
 def runner
   welcome
   card_sum = initial_round
-  prompt_user
-  loop do
-    hit?(card_sum)
-    display_card_total(card_sum)
-    break if display_card_total(card_sum) > 21
-  end
+  storeUserInput = prompt_user
+    if storeUserInput == 'h'
+      hit?(card_sum)
+      display_card_total(card_sum)
+      break if display_card_total(card_sum) > 21
+    end
   end_game(card_sum)
 end
 
