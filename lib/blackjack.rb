@@ -58,7 +58,6 @@ def runner
   storeUserInput = get_user_input
     if storeUserInput === 'h'
       loop do
-        hit?(card_sum)
         card_sum = hit?(card_sum)
         display_card_total(card_sum)
       end
