@@ -56,7 +56,8 @@ def runner
   card_sum = initial_round
   loop do
     card_sum = hit?(card_sum)
-    if(display_card_total(card_sum)) > 21
+    if(display_card_total(card_sum)) > 21 # at this point i'm running the display_card_total function and passing
+      #the return value to be compared for the if statement so I'm doing two things in one
       break end_game(card_sum)
     end
   end
