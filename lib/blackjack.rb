@@ -55,9 +55,8 @@ def runner
   cardSum = initial_round
   display_card_total(cardSum)
   prompt_user
-  hit?(cardSum)
   loop do
-    hit?
+    hit?(cardSum)
     display_card_total
     break if display_card_total > 21
   end
