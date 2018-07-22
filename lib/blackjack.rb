@@ -55,8 +55,6 @@ def runner
   cardSum = initial_round
   display_card_total(cardSum)
   prompt_user
-  storeUserInput = get_user_input
-  hit?
   loop do
     hit?
     display_card_total
